@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowDown, ArrowUpRight, Download, Instagram, Mail, MapPin, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Download, Instagram, MapPin, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import portraitAsset from "@/assets/lavina-portrait.jpeg.asset.json";
 import starRedAsset from "@/assets/star-red.jpeg.asset.json";
@@ -169,8 +169,7 @@ function Index() {
         <img src={starRedAsset.url} alt="" className="star-drift pointer-events-none absolute right-0 top-8 w-40 mix-blend-multiply md:w-64" />
         <p className="text-xs font-bold uppercase text-primary">05 · Contact</p><h2 className="mt-5 max-w-5xl font-display text-5xl font-black uppercase leading-[0.9] md:text-8xl">Let’s build something <span className="outline-word">great</span> together.</h2>
         <div className="mt-12 flex flex-wrap gap-3">
-          <Button asChild size="lg" className="rounded-none"><a href="mailto:lavinadangi@gmail.com"><Mail /> Email me</a></Button>
-          <Button asChild size="lg" variant="outline" className="rounded-none"><a href="https://www.instagram.com/lavinadangii/" target="_blank" rel="noreferrer"><Instagram /> Instagram</a></Button>
+          <Button asChild size="lg" className="rounded-none"><a href="https://www.instagram.com/lavinadangii/" target="_blank" rel="noreferrer"><Instagram /> Connect on Instagram</a></Button>
         </div>
       </section>
 
