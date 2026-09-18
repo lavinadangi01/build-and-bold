@@ -1,0 +1,3 @@
+- [ ] Replace Pixellab camera image with latest MEEVYY bangle photo
+- [ ] Add uploaded MEEVYY work to gallery
+- [ ] Add a dedicated Pixellab Media work page
