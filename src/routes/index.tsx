@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import portraitAsset from "@/assets/lavina-portrait.jpeg.asset.json";
 import starRedAsset from "@/assets/star-red.jpeg.asset.json";
 import starBlackAsset from "@/assets/star-black.jpeg.asset.json";
-import cameraAsset from "@/assets/camera-art.jpeg.asset.json";
+import pixellabAsset from "@/assets/meevyy-bangle-campaign.webp.asset.json";
 import phoneAsset from "@/assets/phone-art.jpeg.asset.json";
 import telephoneAsset from "@/assets/telephone-art.jpeg.asset.json";
 import zippAsset from "@/assets/zipp-logo.jpeg.asset.json";
@@ -95,10 +95,10 @@ function Index() {
           <article className="grid border-t border-background/30 py-12 md:grid-cols-2 md:gap-16">
             <div className="relative overflow-hidden bg-secondary aspect-[4/3]">
               <div className="absolute inset-0 grid-bg opacity-30" />
-              <img src={cameraAsset.url} alt="Fashion collage camera artwork" className="relative h-full w-full object-contain mix-blend-multiply transition duration-500 hover:scale-105" />
+              <img src={pixellabAsset.url} alt="MEEVYY bangle campaign created for Pixellab Media" className="relative h-full w-full object-cover transition duration-500 hover:scale-105" />
             </div>
             <div className="flex flex-col justify-between pt-8 md:pt-0">
-              <div><p className="text-xs font-bold uppercase text-primary">01 · Industry experience</p><h3 className="mt-4 font-display text-4xl font-black uppercase md:text-6xl">Pixellab Media</h3><p className="mt-5 max-w-xl text-background/70">Creative Intern & Shopify Developer — designing conversion-led assets, modifying storefronts, and managing product operations from idea to live listing.</p></div>
+              <div><p className="text-xs font-bold uppercase text-primary">01 · Industry experience</p><h3 className="mt-4 font-display text-4xl font-black uppercase md:text-6xl">Pixellab Media</h3><p className="mt-5 max-w-xl text-background/70">Creative Intern & Shopify Developer — designing conversion-led assets, modifying storefronts, and managing product operations from idea to live listing.</p><Button asChild variant="outline" className="mt-7 w-fit rounded-none border-background bg-transparent text-background hover:bg-background hover:text-foreground"><Link to="/pixellab-media">View Pixellab work <ArrowUpRight /></Link></Button></div>
               <div className="mt-10 grid grid-cols-2 gap-px bg-background/30 border border-background/30">
                 <div className="bg-foreground p-5"><b className="font-display text-4xl text-accent">112</b><p className="mt-1 text-xs uppercase text-background/60">Assets created</p></div>
                 <div className="bg-foreground p-5"><b className="font-display text-4xl text-accent">2 days</b><p className="mt-1 text-xs uppercase text-background/60">Created + listed</p></div>
