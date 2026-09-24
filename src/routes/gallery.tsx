@@ -7,6 +7,8 @@ import artBreathe from "@/assets/artwork-breathe.JPG.asset.json";
 import artBlue from "@/assets/artwork-blue.jpg.asset.json";
 import artWeeknd from "@/assets/artwork-weeknd.jpg.asset.json";
 import starRed from "@/assets/star-red.jpeg.asset.json";
+import meevyyEarrings from "@/assets/meevyy-earrings-fabric.png.asset.json";
+import meevyyBangles from "@/assets/meevyy-bangles-bottle.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -28,6 +30,8 @@ const artwork = [
   { src: artBreathe.url, title: "Breathe", type: "Graphic tee concept", className: "md:col-span-5" },
   { src: artBlue.url, title: "So Blue", type: "Music-led apparel", className: "md:col-span-7" },
   { src: artWeeknd.url, title: "Overdose", type: "Artist collage", className: "md:col-span-12" },
+  { src: meevyyEarrings.url, title: "MEEVYY Draped Edit", type: "Product campaign · Pixellab Media", className: "md:col-span-6" },
+  { src: meevyyBangles.url, title: "MEEVYY Bangle Story", type: "Product campaign · Pixellab Media", className: "md:col-span-6" },
 ];
 
 function Gallery() {
