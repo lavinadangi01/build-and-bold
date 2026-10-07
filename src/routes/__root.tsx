@@ -85,15 +85,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
     ],
-    scripts: [
-      {
-        src: "https://cdn.botpress.cloud/webchat/v5.0/inject.js",
-      },
-      {
-        src: "https://files.bpcontent.cloud/2026/10/07/03/20261007033737-FH6WHPY3.js",
-        defer: true,
-      },
-    ],
     links: [
       {
         rel: "stylesheet",
@@ -130,6 +121,69 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
+      <BotpressChat />
     </QueryClientProvider>
   );
+}
+
+function BotpressChat() {
+  useEffect(() => {
+    try {
+      Intl.getCanonicalLocales(navigator.language);
+    } catch {
+      const normalizedLanguage = navigator.language
+        .replace(/@.*$/, "")
+        .replace(/_/g, "-");
+      let safeLanguage = "en";
+
+      try {
+        safeLanguage = Intl.getCanonicalLocales(normalizedLanguage)[0] ?? "en";
+      } catch {
+        safeLanguage = "en";
+      }
+
+      try {
+        Object.defineProperty(navigator, "language", {
+          configurable: true,
+          value: safeLanguage,
+        });
+        Object.defineProperty(navigator, "languages", {
+          configurable: true,
+          value: [safeLanguage],
+        });
+      } catch {
+        // Keep the page usable if the browser does not allow language overrides.
+      }
+    }
+
+    const injectId = "botpress-webchat-inject";
+    const configId = "botpress-webchat-config";
+    const configUrl =
+      "https://files.bpcontent.cloud/2026/10/07/03/20261007033737-FH6WHPY3.js";
+
+    const loadConfig = () => {
+      if (document.getElementById(configId)) return;
+
+      const configScript = document.createElement("script");
+      configScript.id = configId;
+      configScript.src = configUrl;
+      configScript.defer = true;
+      document.head.appendChild(configScript);
+    };
+
+    const existingInject = document.getElementById(injectId);
+    if (existingInject) {
+      if (window.botpress) loadConfig();
+      else existingInject.addEventListener("load", loadConfig, { once: true });
+      return;
+    }
+
+    const injectScript = document.createElement("script");
+    injectScript.id = injectId;
+    injectScript.src = "https://cdn.botpress.cloud/webchat/v5.0/inject.js";
+    injectScript.addEventListener("load", loadConfig, { once: true });
+    document.head.appendChild(injectScript);
+  }, []);
+
+  return null;
 }
