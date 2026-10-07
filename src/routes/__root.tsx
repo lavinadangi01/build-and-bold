@@ -173,7 +173,7 @@ function BotpressChat() {
 
     const existingInject = document.getElementById(injectId);
     if (existingInject) {
-      if (window.botpress) loadConfig();
+      if ("botpress" in window) loadConfig();
       else existingInject.addEventListener("load", loadConfig, { once: true });
       return;
     }
