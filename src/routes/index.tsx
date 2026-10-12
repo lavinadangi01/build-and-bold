@@ -1,14 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowDown, ArrowUpRight, Download, Instagram, MapPin, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import portraitAsset from "@/assets/lavina-portrait.jpeg.asset.json";
-import starRedAsset from "@/assets/star-red.jpeg.asset.json";
-import starBlackAsset from "@/assets/star-black.jpeg.asset.json";
-import pixellabAsset from "@/assets/meevyy-bangle-campaign.webp.asset.json";
-import phoneAsset from "@/assets/phone-art.jpeg.asset.json";
-import telephoneAsset from "@/assets/telephone-art.jpeg.asset.json";
-import zippAsset from "@/assets/zipp-logo.jpeg.asset.json";
-import resumeAsset from "@/assets/Lavina-Dangi-Resume.pdf.asset.json";
+import portraitAsset from "@/assets/lavina-portrait.jpeg";
+import starRedAsset from "@/assets/star-red.jpeg";
+import starBlackAsset from "@/assets/star-black.jpeg";
+import pixellabAsset from "@/assets/meevyy-bangle-campaign.webp";
+import phoneAsset from "@/assets/phone-art.jpeg";
+import telephoneAsset from "@/assets/telephone-art.jpeg";
+import zippAsset from "@/assets/zipp-logo.jpeg";
+import resumeAsset from "@/assets/Lavina-Dangi-Resume.pdf";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -48,8 +48,8 @@ function Index() {
       </header>
 
       <section id="top" className="relative min-h-[94svh] border-b border-border pt-24">
-        <img src={starRedAsset.url} alt="" className="star-drift pointer-events-none absolute -left-14 top-32 w-40 mix-blend-multiply md:left-[5%] md:w-56" />
-        <img src={starBlackAsset.url} alt="" className="star-drift-slow pointer-events-none absolute -right-20 top-20 w-44 opacity-80 mix-blend-multiply md:right-[4%] md:w-64" />
+        <img src={starRedAsset} alt="" className="star-drift pointer-events-none absolute -left-14 top-32 w-40 mix-blend-multiply md:left-[5%] md:w-56" />
+        <img src={starBlackAsset} alt="" className="star-drift-slow pointer-events-none absolute -right-20 top-20 w-44 opacity-80 mix-blend-multiply md:right-[4%] md:w-64" />
         <div className="mx-auto grid min-h-[calc(94svh-6rem)] max-w-[1500px] grid-cols-1 items-end gap-8 px-5 pb-10 md:grid-cols-[1.35fr_0.65fr] md:px-10 md:pb-16">
           <div className="relative z-10">
             <p className="mb-5 flex items-center gap-2 text-xs font-bold uppercase text-muted-foreground"><span className="h-2 w-2 bg-accent" /> Jaipur, India · Available for opportunities</p>
@@ -64,7 +64,7 @@ function Index() {
           <div className="relative mx-auto w-full max-w-md md:mx-0 md:ml-auto">
             <div className="absolute -left-10 top-16 z-10 bg-primary px-4 py-2 text-xs font-black uppercase text-primary-foreground -rotate-6">20 yrs / building early</div>
             <div className="portrait-frame relative aspect-[3/4] overflow-hidden bg-secondary">
-              <img src={portraitAsset.url} alt="Lavina Dangi" className="h-full w-full object-cover object-top grayscale transition duration-500 hover:grayscale-0" />
+              <img src={portraitAsset} alt="Lavina Dangi" className="h-full w-full object-cover object-top grayscale transition duration-500 hover:grayscale-0" />
               <div className="absolute inset-x-0 bottom-0 flex justify-between bg-foreground px-4 py-3 text-[10px] font-bold uppercase text-background"><span>Creative technologist</span><span>01 / 06</span></div>
             </div>
           </div>
@@ -95,7 +95,7 @@ function Index() {
           <article className="grid border-t border-background/30 py-12 md:grid-cols-2 md:gap-16">
             <div className="relative overflow-hidden bg-secondary aspect-[4/3]">
               <div className="absolute inset-0 grid-bg opacity-30" />
-              <img src={pixellabAsset.url} alt="MEEVYY bangle campaign created for Pixellab Media" className="relative h-full w-full object-cover transition duration-500 hover:scale-105" />
+              <img src={pixellabAsset} alt="MEEVYY bangle campaign created for Pixellab Media" className="relative h-full w-full object-cover transition duration-500 hover:scale-105" />
             </div>
             <div className="flex flex-col justify-between pt-8 md:pt-0">
               <div><p className="text-xs font-bold uppercase text-primary">01 · Industry experience</p><h3 className="mt-4 font-display text-4xl font-black uppercase md:text-6xl">Pixellab Media</h3><p className="mt-5 max-w-xl text-background/70">Creative Intern & Shopify Developer — designing conversion-led assets, modifying storefronts, and managing product operations from idea to live listing.</p><Button asChild variant="outline" className="mt-7 w-fit rounded-none border-background bg-transparent text-background hover:bg-background hover:text-foreground"><Link to="/pixellab-media">View Pixellab work <ArrowUpRight /></Link></Button></div>
@@ -120,7 +120,7 @@ function Index() {
 
           <article className="grid border-t border-background/30 py-12 md:grid-cols-2 md:gap-16">
             <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden bg-background p-12">
-              <img src={zippAsset.url} alt="Zipp vehicle care logo" className="h-2/3 w-2/3 object-contain transition duration-500 hover:rotate-3 hover:scale-105" />
+              <img src={zippAsset} alt="Zipp vehicle care logo" className="h-2/3 w-2/3 object-contain transition duration-500 hover:rotate-3 hover:scale-105" />
               <span className="absolute right-4 top-4 bg-primary px-3 py-2 text-[10px] font-bold uppercase text-primary-foreground">Pre-launch concept</span>
             </div>
             <div className="flex flex-col justify-between pt-8 md:pt-0">
@@ -132,7 +132,7 @@ function Index() {
       </section>
 
       <section className="relative border-b border-border bg-secondary py-24 md:py-32">
-        <img src={telephoneAsset.url} alt="" className="pointer-events-none absolute -right-16 bottom-0 hidden h-full w-1/3 object-contain mix-blend-multiply md:block" />
+        <img src={telephoneAsset} alt="" className="pointer-events-none absolute -right-16 bottom-0 hidden h-full w-1/3 object-contain mix-blend-multiply md:block" />
         <div className="relative mx-auto max-w-[1500px] px-5 md:px-10">
           <span className="section-index">03</span>
           <div className="mt-4 max-w-4xl"><p className="text-xs font-bold uppercase text-primary">Early career / real output</p><blockquote className="mt-5 font-display text-4xl font-black uppercase leading-tight md:text-7xl">“Seven product images each, across sixteen products — live in two days.”</blockquote><p className="mt-6 text-muted-foreground">Creative production, e-commerce operations, and speed — working as one system.</p></div>
@@ -148,7 +148,7 @@ function Index() {
               <div><p className="text-xs font-bold uppercase text-primary">Education</p><h3 className="mt-3 font-display text-2xl font-black">B.Tech · Computer Science Engineering</h3><p className="mt-2 text-muted-foreground">JECRC University, Jaipur · Present</p></div>
               <div><p className="text-xs font-bold uppercase text-primary">Schooling</p><h3 className="mt-3 font-display text-2xl font-black">St. Anselm’s Pink City School</h3><p className="mt-2 text-muted-foreground">Malviya Nagar, Jaipur</p></div>
             </div>
-            <Button asChild variant="outline" className="mt-10 rounded-none"><a href={resumeAsset.url} target="_blank" rel="noreferrer"><Download /> Download resume</a></Button>
+            <Button asChild variant="outline" className="mt-10 rounded-none"><a href={resumeAsset} target="_blank" rel="noreferrer"><Download /> Download resume</a></Button>
           </div>
         </div>
       </section>
@@ -156,7 +156,7 @@ function Index() {
       <section className="border-y border-border bg-primary text-primary-foreground">
         <div className="mx-auto grid max-w-[1500px] md:grid-cols-2">
           <div className="relative min-h-[480px] overflow-hidden border-b border-primary-foreground/20 p-5 md:border-b-0 md:border-r md:p-10">
-            <img src={phoneAsset.url} alt="Experimental black and white phone artwork" className="absolute inset-0 h-full w-full object-contain mix-blend-multiply" />
+            <img src={phoneAsset} alt="Experimental black and white phone artwork" className="absolute inset-0 h-full w-full object-contain mix-blend-multiply" />
           </div>
           <div className="flex flex-col justify-center p-8 md:p-16">
             <p className="text-xs font-bold uppercase">Creative archive</p><h2 className="mt-5 font-display text-5xl font-black uppercase md:text-7xl">Art lives here, too.</h2><p className="mt-6 max-w-lg text-primary-foreground/75">Selected fashion graphics and visual experiments — where music, streetwear, and digital collage meet.</p>
@@ -166,7 +166,7 @@ function Index() {
       </section>
 
       <section id="contact" className="relative mx-auto max-w-[1500px] px-5 py-24 md:px-10 md:py-36">
-        <img src={starRedAsset.url} alt="" className="star-drift pointer-events-none absolute right-0 top-8 w-40 mix-blend-multiply md:w-64" />
+        <img src={starRedAsset} alt="" className="star-drift pointer-events-none absolute right-0 top-8 w-40 mix-blend-multiply md:w-64" />
         <p className="text-xs font-bold uppercase text-primary">05 · Contact</p><h2 className="mt-5 max-w-5xl font-display text-5xl font-black uppercase leading-[0.9] md:text-8xl">Let’s build something <span className="outline-word">great</span> together.</h2>
         <div className="mt-12 flex flex-wrap gap-3">
           <Button asChild size="lg" className="rounded-none"><a href="https://www.instagram.com/lavinadangii/" target="_blank" rel="noreferrer"><Instagram /> Connect on Instagram</a></Button>

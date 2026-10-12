@@ -1,14 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import artJuice from "@/assets/artwork-juicewrld.JPG.asset.json";
-import artLav from "@/assets/artwork-lav.JPG.asset.json";
-import artBreathe from "@/assets/artwork-breathe.JPG.asset.json";
-import artBlue from "@/assets/artwork-blue.jpg.asset.json";
-import artWeeknd from "@/assets/artwork-weeknd.jpg.asset.json";
-import starRed from "@/assets/star-red.jpeg.asset.json";
-import meevyyEarrings from "@/assets/meevyy-earrings-fabric.png.asset.json";
-import meevyyBangles from "@/assets/meevyy-bangles-bottle.png.asset.json";
+import artJuice from "@/assets/artwork-juicewrld.JPG";
+import artLav from "@/assets/artwork-lav.JPG";
+import artBreathe from "@/assets/artwork-breathe.JPG";
+import artBlue from "@/assets/artwork-blue.jpg";
+import artWeeknd from "@/assets/artwork-weeknd.jpg";
+import starRed from "@/assets/star-red.jpeg";
+import meevyyEarrings from "@/assets/meevyy-earrings-fabric.png";
+import meevyyBangles from "@/assets/meevyy-bangles-bottle.png";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -25,13 +25,13 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const artwork = [
-  { src: artJuice.url, title: "Juicewrld Tribute", type: "Collage tee concept", className: "md:col-span-7" },
-  { src: artLav.url, title: "Eyes That Speak", type: "Streetwear identity", className: "md:col-span-5" },
-  { src: artBreathe.url, title: "Breathe", type: "Graphic tee concept", className: "md:col-span-5" },
-  { src: artBlue.url, title: "So Blue", type: "Music-led apparel", className: "md:col-span-7" },
-  { src: artWeeknd.url, title: "Overdose", type: "Artist collage", className: "md:col-span-12" },
-  { src: meevyyEarrings.url, title: "MEEVYY Draped Edit", type: "Product campaign · Pixellab Media", className: "md:col-span-6" },
-  { src: meevyyBangles.url, title: "MEEVYY Bangle Story", type: "Product campaign · Pixellab Media", className: "md:col-span-6" },
+  { src: artJuice, title: "Juicewrld Tribute", type: "Collage tee concept", className: "md:col-span-7" },
+  { src: artLav, title: "Eyes That Speak", type: "Streetwear identity", className: "md:col-span-5" },
+  { src: artBreathe, title: "Breathe", type: "Graphic tee concept", className: "md:col-span-5" },
+  { src: artBlue, title: "So Blue", type: "Music-led apparel", className: "md:col-span-7" },
+  { src: artWeeknd, title: "Overdose", type: "Artist collage", className: "md:col-span-12" },
+  { src: meevyyEarrings, title: "MEEVYY Draped Edit", type: "Product campaign · Pixellab Media", className: "md:col-span-6" },
+  { src: meevyyBangles, title: "MEEVYY Bangle Story", type: "Product campaign · Pixellab Media", className: "md:col-span-6" },
 ];
 
 function Gallery() {
@@ -40,7 +40,7 @@ function Gallery() {
       <div className="mx-auto flex h-16 max-w-[1500px] items-center justify-between px-5 md:px-10"><Link to="/" className="flex items-center gap-2 text-xs font-bold uppercase"><ArrowLeft className="size-4" /> Portfolio</Link><span className="font-display text-xl font-black uppercase">Lavina<span className="text-primary">*</span></span></div>
     </header>
     <section className="relative mx-auto max-w-[1500px] overflow-hidden px-5 pb-20 pt-16 md:px-10 md:pb-28 md:pt-24">
-      <img src={starRed.url} alt="" className="star-drift pointer-events-none absolute -right-16 top-4 w-48 mix-blend-multiply md:w-72" />
+      <img src={starRed} alt="" className="star-drift pointer-events-none absolute -right-16 top-4 w-48 mix-blend-multiply md:w-72" />
       <p className="text-xs font-bold uppercase text-primary">Visual archive / 2026</p><h1 className="mt-4 max-w-5xl font-display text-[clamp(4rem,10vw,9rem)] font-black uppercase leading-[0.82]">Lavina’s<br/><span className="outline-word">Gallery</span></h1><p className="mt-8 max-w-lg text-lg text-muted-foreground">Fashion graphics, streetwear studies, and digital collage — music and mood translated into things you can wear.</p>
     </section>
     <section className="border-t border-border bg-secondary px-5 py-16 md:px-10 md:py-24">
