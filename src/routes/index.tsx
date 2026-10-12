@@ -1,14 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowDown, ArrowUpRight, Download, Instagram, MapPin, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import portraitAsset from "@/assets/lavina-portrait.jpeg.asset.json";
-import starRedAsset from "@/assets/star-red.jpeg.asset.json";
-import starBlackAsset from "@/assets/star-black.jpeg.asset.json";
-import pixellabAsset from "@/assets/meevyy-bangle-campaign.webp.asset.json";
-import phoneAsset from "@/assets/phone-art.jpeg.asset.json";
-import telephoneAsset from "@/assets/telephone-art.jpeg.asset.json";
-import zippAsset from "@/assets/zipp-logo.jpeg.asset.json";
-import resumeAsset from "@/assets/Lavina-Dangi-Resume.pdf.asset.json";
+import portraitAsset from "@/assets/lavina-portrait.jpeg";
+import starRedAsset from "@/assets/star-red.jpeg";
+import starBlackAsset from "@/assets/star-black.jpeg";
+import pixellabAsset from "@/assets/meevyy-bangle-campaign.webp";
+import phoneAsset from "@/assets/phone-art.jpeg";
+import telephoneAsset from "@/assets/telephone-art.jpeg";
+import zippAsset from "@/assets/zipp-logo.jpeg";
+import resumeAsset from "@/assets/Lavina-Dangi-Resume.pdf";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -64,7 +64,7 @@ function Index() {
           <div className="relative mx-auto w-full max-w-md md:mx-0 md:ml-auto">
             <div className="absolute -left-10 top-16 z-10 bg-primary px-4 py-2 text-xs font-black uppercase text-primary-foreground -rotate-6">20 yrs / building early</div>
             <div className="portrait-frame relative aspect-[3/4] overflow-hidden bg-secondary">
-              <img src={portraitAsset.url} alt="Lavina Dangi" className="h-full w-full object-cover object-top grayscale transition duration-500 hover:grayscale-0" />
+              <img src={portraitAsset} alt="Lavina Dangi" className="h-full w-full object-cover object-top grayscale transition duration-500 hover:grayscale-0" />
               <div className="absolute inset-x-0 bottom-0 flex justify-between bg-foreground px-4 py-3 text-[10px] font-bold uppercase text-background"><span>Creative technologist</span><span>01 / 06</span></div>
             </div>
           </div>
@@ -132,7 +132,7 @@ function Index() {
       </section>
 
       <section className="relative border-b border-border bg-secondary py-24 md:py-32">
-        <img src={telephoneAsset.url} alt="" className="pointer-events-none absolute -right-16 bottom-0 hidden h-full w-1/3 object-contain mix-blend-multiply md:block" />
+        <img src={telephoneAsset} alt="" className="pointer-events-none absolute -right-16 bottom-0 hidden h-full w-1/3 object-contain mix-blend-multiply md:block" />
         <div className="relative mx-auto max-w-[1500px] px-5 md:px-10">
           <span className="section-index">03</span>
           <div className="mt-4 max-w-4xl"><p className="text-xs font-bold uppercase text-primary">Early career / real output</p><blockquote className="mt-5 font-display text-4xl font-black uppercase leading-tight md:text-7xl">“Seven product images each, across sixteen products — live in two days.”</blockquote><p className="mt-6 text-muted-foreground">Creative production, e-commerce operations, and speed — working as one system.</p></div>
@@ -156,7 +156,7 @@ function Index() {
       <section className="border-y border-border bg-primary text-primary-foreground">
         <div className="mx-auto grid max-w-[1500px] md:grid-cols-2">
           <div className="relative min-h-[480px] overflow-hidden border-b border-primary-foreground/20 p-5 md:border-b-0 md:border-r md:p-10">
-            <img src={phoneAsset.url} alt="Experimental black and white phone artwork" className="absolute inset-0 h-full w-full object-contain mix-blend-multiply" />
+            <img src={phoneAsset} alt="Experimental black and white phone artwork" className="absolute inset-0 h-full w-full object-contain mix-blend-multiply" />
           </div>
           <div className="flex flex-col justify-center p-8 md:p-16">
             <p className="text-xs font-bold uppercase">Creative archive</p><h2 className="mt-5 font-display text-5xl font-black uppercase md:text-7xl">Art lives here, too.</h2><p className="mt-6 max-w-lg text-primary-foreground/75">Selected fashion graphics and visual experiments — where music, streetwear, and digital collage meet.</p>

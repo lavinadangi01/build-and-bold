@@ -1,13 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import campaignHero from "@/assets/meevyy-bangle-campaign.webp.asset.json";
-import fabricEarrings from "@/assets/meevyy-earrings-fabric.png.asset.json";
-import bottleBangles from "@/assets/meevyy-bangles-bottle.png.asset.json";
-import pineappleEarrings from "@/assets/meevyy-pineapple-earrings.png.asset.json";
-import croissantEarrings from "@/assets/meevyy-croissant-earrings.png.asset.json";
-import watermelonEarrings from "@/assets/meevyy-watermelon-earrings.webp.asset.json";
-import cherryEarrings from "@/assets/meevyy-cherry-earrings.webp.asset.json";
+import campaignHero from "@/assets/meevyy-bangle-campaign.webp";
+import fabricEarrings from "@/assets/meevyy-earrings-fabric.png";
+import bottleBangles from "@/assets/meevyy-bangles-bottle.png";
+import pineappleEarrings from "@/assets/meevyy-pineapple-earrings.png";
+import croissantEarrings from "@/assets/meevyy-croissant-earrings.png";
+import watermelonEarrings from "@/assets/meevyy-watermelon-earrings.webp";
+import cherryEarrings from "@/assets/meevyy-cherry-earrings.webp";
 
 export const Route = createFileRoute("/pixellab-media")({
   head: () => ({
@@ -24,12 +24,12 @@ export const Route = createFileRoute("/pixellab-media")({
 });
 
 const campaignWork = [
-  { src: fabricEarrings.url, title: "Draped Jhumka Edit", detail: "Product composition" },
-  { src: bottleBangles.url, title: "Bangle Bottle Story", detail: "Campaign art direction" },
-  { src: pineappleEarrings.url, title: "Tropical Earring Edit", detail: "Product styling" },
-  { src: croissantEarrings.url, title: "Breakfast Jewellery", detail: "Campaign concept" },
-  { src: watermelonEarrings.url, title: "Summer Drop", detail: "Seasonal product story" },
-  { src: cherryEarrings.url, title: "Cherry Line-up", detail: "Social campaign creative" },
+  { src: fabricEarrings, title: "Draped Jhumka Edit", detail: "Product composition" },
+  { src: bottleBangles, title: "Bangle Bottle Story", detail: "Campaign art direction" },
+  { src: pineappleEarrings, title: "Tropical Earring Edit", detail: "Product styling" },
+  { src: croissantEarrings, title: "Breakfast Jewellery", detail: "Campaign concept" },
+  { src: watermelonEarrings, title: "Summer Drop", detail: "Seasonal product story" },
+  { src: cherryEarrings, title: "Cherry Line-up", detail: "Social campaign creative" },
 ];
 
 function PixellabMedia() {
@@ -54,7 +54,7 @@ function PixellabMedia() {
             </div>
           </div>
           <div className="min-h-[560px] overflow-hidden bg-secondary md:min-h-[760px]">
-            <img src={campaignHero.url} alt="MEEVYY bangles styled with a fruit bag" className="h-full w-full object-cover" />
+            <img src={campaignHero} alt="MEEVYY bangles styled with a fruit bag" className="h-full w-full object-cover" />
           </div>
         </div>
       </section>
