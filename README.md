@@ -1,6 +1,6 @@
 # Vibrant Creator Hub
 
-reate a high-converting, visually stunning, modern personal portfolio website for a 20-year-old 1st-year B.Tech Computer Science Engineering student at JECRC University, Jaipur. The website should highlight early industry experience, technical skills, creative shopify/marketing accomplishments, and an ambitious startup concept.
+create a high-converting, visually stunning, modern personal portfolio website for a 20-year-old 1st-year B.Tech Computer Science Engineering student at JECRC University, Jaipur. The website should highlight early industry experience, technical skills, creative shopify/marketing accomplishments, and an ambitious startup concept.
 
 🎨 Theme, Styling & Aesthetic Reference
 Inspiration Reference: Based on Vanya Issar's Portfolio, featuring clean typography, high visual impact, creative layouts, interactive elements, and personal branding.
