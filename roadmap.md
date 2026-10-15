@@ -1,3 +1,4 @@
 - [x] Replace Pixellab camera image with latest MEEVYY bangle photo
 - [x] Add uploaded MEEVYY work to gallery
 - [x] Add a dedicated Pixellab Media work page
+- [x] Feature Snapbyt in selected work with a link to its live website
