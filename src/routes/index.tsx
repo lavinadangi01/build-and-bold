@@ -119,12 +119,29 @@ function Index() {
           </article>
 
           <article className="grid border-t border-background/30 py-12 md:grid-cols-2 md:gap-16">
+            <div className="order-1 flex aspect-[4/3] flex-col justify-between overflow-hidden bg-accent p-8 text-accent-foreground md:p-12">
+              <span className="text-xs font-bold uppercase">Everyday finds · Online store</span>
+              <div>
+                <p className="font-display text-6xl font-black uppercase leading-[0.8] md:text-8xl">Snap<br />Byt<span className="text-primary">.</span></p>
+                <p className="mt-6 text-xs font-bold uppercase">Home · Kitchen · Garden · Tools</p>
+              </div>
+              <span className="self-end text-xs font-bold uppercase">snapbyt.com ↗</span>
+            </div>
+            <div className="flex flex-col justify-between pt-8 md:pt-0">
+              <div><p className="text-xs font-bold uppercase text-primary">03 · Online storefront</p><h3 className="mt-4 font-display text-4xl font-black uppercase md:text-6xl">Snapbyt</h3><p className="mt-5 max-w-xl text-background/70">An e-commerce destination for everyday finds, with products across home, kitchen, garden, cleaning, storage, décor, and tools.</p></div>
+              <Button asChild variant="outline" className="mt-10 w-fit rounded-none border-background bg-transparent text-background hover:bg-background hover:text-foreground">
+                <a href="https://snapbyt.com/" target="_blank" rel="noreferrer">Visit Snapbyt <ArrowUpRight /></a>
+              </Button>
+            </div>
+          </article>
+
+          <article className="grid border-t border-background/30 py-12 md:grid-cols-2 md:gap-16">
             <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden bg-background p-12">
               <img src={zippAsset} alt="Zipp vehicle care logo" className="h-2/3 w-2/3 object-contain transition duration-500 hover:rotate-3 hover:scale-105" />
               <span className="absolute right-4 top-4 bg-primary px-3 py-2 text-[10px] font-bold uppercase text-primary-foreground">Pre-launch concept</span>
             </div>
             <div className="flex flex-col justify-between pt-8 md:pt-0">
-              <div><p className="text-xs font-bold uppercase text-primary">03 · Founder concept</p><h3 className="mt-4 font-display text-4xl font-black uppercase md:text-6xl">Zipp</h3><p className="mt-3 font-display text-xl font-bold text-accent">The future of on-demand vehicle care.</p><p className="mt-5 max-w-xl text-background/70">Reimagining a broken auto-repair experience through instant, accessible mechanical assistance designed around speed and convenience.</p></div>
+              <div><p className="text-xs font-bold uppercase text-primary">04 · Founder concept</p><h3 className="mt-4 font-display text-4xl font-black uppercase md:text-6xl">Zipp</h3><p className="mt-3 font-display text-xl font-bold text-accent">The future of on-demand vehicle care.</p><p className="mt-5 max-w-xl text-background/70">Reimagining a broken auto-repair experience through instant, accessible mechanical assistance designed around speed and convenience.</p></div>
               <div className="mt-10 flex items-center gap-2 text-xs font-bold uppercase text-background/60"><Sparkles className="text-accent" /> In development</div>
             </div>
           </article>
