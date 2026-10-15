@@ -119,7 +119,7 @@ function Index() {
           </article>
 
           <article className="grid border-t border-background/30 py-12 md:grid-cols-2 md:gap-16">
-            <div className="order-1 flex aspect-[4/3] flex-col justify-between overflow-hidden bg-accent p-8 text-accent-foreground md:p-12">
+            <div className="order-1 flex aspect-[4/3] flex-col justify-between overflow-hidden bg-chart-4 p-8 text-foreground md:p-12">
               <span className="text-xs font-bold uppercase">Everyday finds · Online store</span>
               <div>
                 <p className="font-display text-6xl font-black uppercase leading-[0.8] md:text-8xl">Snap<br />Byt<span className="text-primary">.</span></p>
